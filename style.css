@@ -1122,6 +1122,9 @@ html {
   animation: iconRotate 3s linear infinite;
   margin-bottom: 1rem;
 }
+.anim-iconos i {
+  color: yellow;
+}
 
 /* Animaciones */
 @keyframes gradientLoop {
