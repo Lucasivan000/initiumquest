@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InitiumQuest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Banner / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="./assets/logo-removebg-preview.png" alt="InitiumQuest Logo" class="logo-img">
+            </a>
+            <span>InitiumQuest</span>
+        </div>
+
+        <!-- Botón hamburguesa mobile -->
+        <button class="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Demos de Landings</a>
+            <a href="#botones-premium">Interacciones</a>
+            <a href="#faq-premium">Informacion</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero / Banner principal -->
+    <section class="hero" id="inicio">
+        <div class="hero-text">
+            <h1>Landings diseñadas para convertir</h1>
+            <p>Cada proyecto se diseña según tu objetivo, rubro y canal de contacto.</p>
+            <div class="botonesHero">
+                <a href="#contacto" class="btn-primary">Comenzar ahora</a>
+                <a href="https://wa.me/5491157829665" class="btn-whatsapp" target="_blank">
+                    WhatsApp
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section servicios">
+        <h2 class="section-title">Tu proyecto, listo para mostrarse</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="./assets/serviciosuno.png" alt="Landing Pages Modernas">
+                <h3>Landing Pages Modernas</h3>
+                <p>
+                    Diseñamos Landing web modernas y responsive, con secciones bien definidas y una estructura clara,
+                    pensadas para que los visitantes encuentren la información de forma rápida y atractiva.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/serviciosdos.png" alt="Todo incluido y funcional">
+                <h3>Todo incluido y funcional</h3>
+
+                <p>
+                    Nos encargamos del hosting y el dominio.
+                    Integramos botones de contacto directo (WhatsApp) o formularios que envían las consultas a tu
+                    correo.
+                    Al finalizar el desarrollo, la web queda operativa, responsive y preparada para recibir mensajes
+                    desde cualquier dispositivo.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./assets/serviciostres.png" alt="Páginas para emprendedores">
+                <h3>Páginas para emprendedores</h3>
+                <p>Especialmente diseñadas para quienes quieren ofrecer sus servicios y que los clientes los encuentren
+                    y los contacten de forma rápida. Páginas simples, claras y profesionales, que funcionan en móviles y
+                    escritorio, sin complicaciones.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Proyectos Destacados -->
+
+
+
+    <!-- Portfolio / Proyectos Destacados -->
+    <section id="proyectos" class="section proyectos">
+        <h2 class="section-title">Demos de landings.</h2>
+        <p class="section-subtitle">
+            Cada proyecto se diseña según tu objetivo, rubro y canal de contacto.
+        </p>
+        <div class="cards-container">
+            <div class="card portfolio-card" onclick="openModal('./assets/demotres.png')">
+                <img src="./assets/demotres.png" alt="Proyecto 1">
+                <h3>Landing con Oferta Jerarquizada</h3>
+                <p>Diseño desktop pensado para generar consultas, con excursiones premium destacadas, precios
+                    informativos y una estructura que ordena la oferta para derivar al contacto por WhatsApp.</p>
+            </div>
+            <div class="card portfolio-card" onclick="openModal('./assets/demodos.png')">
+                <img src="./assets/demodos.png" alt="Proyecto 2">
+                <h3>Landing de Servicios Orientada a Leads</h3>
+                <p>Diseño enfocado en captación de consultas, con cards informativas de productos destacados,
+                    formulario de contacto integrado y acceso directo por WhatsApp para comunicación inmediata.</p>
+            </div>
+            <div class="card portfolio-card" onclick="openModal('./assets/demouno.png')">
+                <img src="./assets/demouno.png" alt="Proyecto 3">
+                <h3>Landing Mobile-First para marca de servicios</h3>
+                <p>Diseño optimizado para móviles con navegación clara, enlaces directos a WhatsApp e Instagram y
+                    listado de precios integrado, pensado para convertir visitas en contactos reales.</p>
+            </div>
+            <div class="card portfolio-card" onclick="openModal('./assets/democuatro.png')">
+                <img src="./assets/democuatro.png" alt="Proyecto 4">
+                <h3>Landing de Catálogo Visual</h3>
+                <p>Catálogo visual de productos organizado en cards, con acceso individual a cada artículo y derivación
+                    directa al contacto por WhatsApp para consultas personalizadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="botones-premium" class="section botones-premium">
+        <h2 class="section-title">Botones que marcan la diferencia</h2>
+        <p class="section-subtitle">
+            Cada estilo se adapta a un proyecto distinto y muestra cómo pequeños detalles pueden elevar la experiencia
+            de tu Landing.
+            Toca o pasa el mouse sobre ellos para ver las animaciones en acción.
+        </p>
+        <div class="buttons-demo">
+            <div class="btn-demo btn-primary">Clasico</div>
+            <div class="btn-demo btn-outline">Borde Elegante</div>
+            <div class="btn-demo btn-shadow">Sombra Suave</div>
+            <div class="btn-demo btn-gradient-anim">Degradado Dinamico</div>
+            <div class="btn-demo btn-hover">Interactivo</div>
+            <div class="btn-demo btn-icon-hover"><i>★</i> Con Icono</div>
+            <div class="btn-demo btn-border-anim"><span>Borde Animado</span></div>
+            <div class="btn-demo btn-neumorph">Moderno</div>
+        </div>
+    </section>
+
+    <section id="detalles-premium" class="section detalles-premium">
+        <h2 class="section-title">Animaciones con propósito</h2>
+        <p class="section-subtitle">
+            Cada landing se adapta a tu proyecto. Usamos animaciones y estilos estratégicos para destacar un contenido
+            clave sin sobrecargar la página.
+        </p>
+        <div class="cards-detalles">
+            <div class="detalle-card card-hero">
+                <div class="anim-hero"></div>
+                <h3>Hero Animado</h3>
+                <p>Efectos de entrada que destacan tu landing desde el primer scroll.</p>
+            </div>
+            <div class="detalle-card card-cards">
+                <div class="anim-cards"></div>
+                <h3>Cards Interactivas</h3>
+                <p>Mini animaciones internas que hacen que la información sea atractiva y legible.</p>
+            </div>
+            <div class="detalle-card card-gradient">
+                <div class="anim-gradient"></div>
+                <h3>Degradados Dinámicos</h3>
+                <p>Colores que cambian suavemente para resaltar cada sección.</p>
+            </div>
+            <div class="detalle-card card-iconos">
+                <div class="anim-iconos"></div>
+                <h3>Iconos Personalizados</h3>
+                <p>Detalles visuales que elevan la percepción de calidad, incluso en móvil.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq-premium" class="section faq-premium">
+        <h2 class="section-title">Sugerencias de valor</h2>
+        <p class="section-subtitle">
+            Aquí te mostramos consejos estratégicos sobre cómo aprovechar tu landing.
+        </p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">¿Conviene sobrecargar la landing con animaciones?</button>
+                <div class="faq-answer">
+                    <p>No, demasiadas animaciones distraen y cansan al visitante. Se recomienda usar efectos de manera
+                        estratégica para resaltar secciones clave y mantener la profesionalidad.</p>
+                    <p class="faq-tip">Tip estratégico: usa animaciones solo donde quieras que el visitante fije su
+                        atención. Menos es más.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Es bueno dejar espacios en blanco?</button>
+                <div class="faq-answer">
+                    <p>Sí, los espacios en blanco ayudan a organizar la información, mejorar la lectura y dirigir la
+                        atención hacia lo realmente importante.</p>
+                    <p class="faq-tip">Tip estratégico: un diseño limpio resalta lo que quieres que el visitante vea
+                        primero.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Conviene poner muchas fotos?</button>
+                <div class="faq-answer">
+                    <p>No, demasiadas imágenes pueden saturar al visitante. Se recomienda mostrar solo las esenciales y
+                        de mejor calidad, siempre con un objetivo de comunicación claro.</p>
+                    <p class="faq-tip">Tip estratégico: elige imágenes que cuenten algo; no pongas solo para llenar
+                        espacio.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Qué información debe destacarse?</button>
+                <div class="faq-answer">
+                    <p>Se sugiere resaltar precios, servicios y contacto directo, porque son lo que ayuda al visitante a
+                        tomar decisiones rápidas y claras. Todo lo demás puede ir en secciones secundarias o
+                        complementarias para no distraer ni saturar la página.</p>
+                    <p class="faq-tip">Tip estratégico: piensa siempre en lo que hace avanzar al visitante hacia
+                        contactarte.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">¿Todos los botones deben resaltar?</button>
+                <div class="faq-answer">
+                    <p>No. Los botones que llaman la atención deben reservarse solo para acciones importantes, como
+                        contactarte por WhatsApp o enviar un formulario de consulta. Si todos los botones tienen el
+                        mismo destaque, se pierde la jerarquía y la efectividad.</p>
+                    <p class="faq-tip">Tip estratégico: reserva el destaque visual solo para acciones que realmente
+                        quieres que hagan.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contacto">
+        <h2 class="section-title">Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Modal para agrandar imagen -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <!-- Logo gráfico -->
+                <a href="#inicio" class="footer-logo">
+                    <img src="./assets/logo-removebg-preview.png" alt="InitiumQuest Logo" class="logoFooter">
+                </a>
+                <p>Impulsando proyectos y experiencias web memorables.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Secciones</h4>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#botones-premium">Interacciones</a></li>
+                    <li><a href="#faq-premium">Informacion</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>Email: <a href="mailto:contacto@initiumq.com">contacto@initiumq.com</a></p>
+                <p>Tel: <a href="tel:+5491157829665">+54 11 5782 9665</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InitiumQuest. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Modal para agrandar imagen
+        function openModal(src) {
+            document.getElementById('modal').style.display = "block";
+            document.getElementById('modal-img').src = src;
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = "none";
+        }
+    </script>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>
+        // Seleccionamos elementos
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        // Toggle menú al click en la hamburguesa
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+
+        // Cerrar menú al hacer click en cualquier enlace
+        navItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('open');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
