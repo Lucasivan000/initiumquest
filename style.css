@@ -732,7 +732,7 @@ html {
 
 
 /* Sección demo de botones */
-/* SECCIÓN BOTONES PREMIUM */
+/* SECCIÓN BOTONES PREMIUM */ /* PARTE 1*/
 .botones-premium {
   padding: 4rem 5rem;
   background-color: #fff;
@@ -762,7 +762,43 @@ html {
   margin: 0 auto;
 }
 
-/* BOTONES DEMO BASE */
+/* Responsive: Tablet y Mobile */
+@media (max-width: 1024px) {
+  .botones-premium {
+    padding: 4rem 2.5rem;
+    /* menos padding lateral en tablet */
+  }
+
+  .buttons-demo {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* botones un poco más compactos */
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .botones-premium {
+    padding: 3rem 1.5rem;
+    /* mobile más compacto */
+  }
+
+  .buttons-demo {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    /* cada botón ocupa más ancho y se apilan mejor */
+    gap: 10px;
+  }
+
+  .buttons-demo .btn-demo {
+    font-size: 0.9rem;
+    /* texto ligeramente más pequeño en mobile */
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+
+
+
+/* BOTONES DEMO BASE */   /* PARTE 2*/
 .btn-demo {
   padding: 0.85rem 2rem;
   border-radius: 999px;
