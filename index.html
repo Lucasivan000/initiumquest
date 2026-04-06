@@ -109,7 +109,7 @@
             </div>
             <div class="card portfolio-card" onclick="openModal('./assets/demouno.png')">
                 <img src="./assets/demouno.png" alt="Proyecto 3">
-                <h3>Landing Mobile-First para marca de servicios</h3>
+                <h3>Landing Mobile-First para servicios</h3>
                 <p>Diseño optimizado para móviles con navegación clara, enlaces directos a WhatsApp e Instagram y
                     listado de precios integrado, pensado para convertir visitas en contactos reales.</p>
             </div>
@@ -282,6 +282,13 @@
             <p>&copy; 2026 InitiumQuest. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- Modal global al final del body -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Demo ampliado">
+        </div>
+    </div>
 
     <script>
         // Modal para agrandar imagen
@@ -323,6 +330,18 @@
                 hamburger.classList.remove('open');
             });
         });
+    </script>
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            modal.style.display = 'flex';
+            modalImg.src = src;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
     </script>
 
 </body>

@@ -540,33 +540,54 @@ html {
 }
 
 /* Modal */
+/* fondo y overlay */
 .modal {
   display: none;
   position: fixed;
-  z-index: 200;
-  padding-top: 5%;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+  /* permite scroll si la imagen es grande */
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  /* espacio alrededor de la imagen */
+  box-sizing: border-box;
 }
 
+/* contenedor de la imagen */
 .modal-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-  max-height: 80%;
+  text-align: center;
+  /* centra horizontalmente el contenido */
 }
 
+/* imagen grande centrada */
+.modal-content img {
+  display: block;
+  /* necesaria para centrar con margin auto */
+  margin: 0 auto;
+  /* centra horizontalmente */
+  width: auto;
+  /* mantiene tamaño original */
+  max-width: 100%;
+  /* no excede ancho de pantalla */
+  height: auto;
+  /* mantiene proporción */
+  max-height: none;
+  /* permite que sea más alta que la ventana */
+}
+
+/* botón de cierre */
 .close {
-  position: absolute;
-  top: 20px;
-  right: 45px;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
   color: #fff;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 3rem;
   cursor: pointer;
+  z-index: 1100;
 }
 
 /* Responsive: Tablet y Mobile */
@@ -732,7 +753,8 @@ html {
 
 
 /* Sección demo de botones */
-/* SECCIÓN BOTONES PREMIUM */ /* PARTE 1*/
+/* SECCIÓN BOTONES PREMIUM */
+/* PARTE 1*/
 .botones-premium {
   padding: 4rem 5rem;
   background-color: #fff;
@@ -798,7 +820,8 @@ html {
 
 
 
-/* BOTONES DEMO BASE */   /* PARTE 2*/
+/* BOTONES DEMO BASE */
+/* PARTE 2*/
 .btn-demo {
   padding: 0.85rem 2rem;
   border-radius: 999px;
@@ -1122,9 +1145,7 @@ html {
   animation: iconRotate 3s linear infinite;
   margin-bottom: 1rem;
 }
-.anim-iconos i {
-  color: yellow;
-}
+
 
 /* Animaciones */
 @keyframes gradientLoop {
